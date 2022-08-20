@@ -22,7 +22,7 @@ export default function SignUp() {
             alt="mobile-top-ad"
           />
         </div>
-        <div
+        {/* <div
           id="static-page-detail-modal"
           className="policy-modal top-ad sign-popup"
         >
@@ -88,7 +88,7 @@ export default function SignUp() {
               OK
             </button>
           </div>
-        </div>
+        </div> */}
         <div className="container" style={{flexbasis: '731px'}}>
           <div className="container-inner">
             <div className="header-actions">
