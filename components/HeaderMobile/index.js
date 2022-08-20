@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 export default function HeaderMobile() {
   return (
     <div className="app-body nav-bar">
@@ -12,18 +12,18 @@ export default function HeaderMobile() {
             />
           </div>
           <div className="tools">
-            <a href="/signup">
+            <Link href="/signup">
               <div className="tools-item" style={{ padding: "0px" }}>
                 <i className="mps-bnav-user" style={{ fontSize: "16px" }}></i>
                 <b>Đăng ký</b>
               </div>
-            </a>
-            <a href="/login">
+            </Link>
+            <Link href="/login">
               <div className="tools-item" id="login-btn">
                 <i className="mps-login" style={{ paddingBottom: "2px" }}></i>
                 <b>Đăng nhập</b>
               </div>
-            </a>
+            </Link>
             <div className="country-select">
               <div className="flag-icon flag-icon-squared flag-icon-vn"></div>
               <select>
