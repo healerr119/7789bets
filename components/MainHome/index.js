@@ -12,7 +12,6 @@ export default function MainHome() {
                 controls
                 muted
                 autoPlay={"autoplay"}
-                preLoad="auto"
                 loop
                 className="video-block"
                 width={980}

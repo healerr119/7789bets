@@ -27,8 +27,8 @@ export default function HeaderMobile() {
             <div className="country-select">
               <div className="flag-icon flag-icon-squared flag-icon-vn"></div>
               <select>
-                <option value="vi-VN">Tiếng Việt</option>
-                <option value="en-US">English</option>
+                <option value={"vi-VN"}>Tiếng Việt</option>
+                <option value={"en-US"}>English</option>
               </select>
             </div>
           </div>

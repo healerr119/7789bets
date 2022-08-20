@@ -117,7 +117,6 @@ export default function SignUp() {
                     id="playerid"
                     className=""
                     maxLength="13"
-                    value=""
                   />
                   <small className="info-msg">Vui lòng nhập Id Đăng ký</small>
                 </div>
@@ -136,7 +135,6 @@ export default function SignUp() {
                       id="password"
                       className=""
                       maxLength="20"
-                      value=""
                     />
                     <i className="mps-readable"></i>
                   </div>
@@ -152,7 +150,7 @@ export default function SignUp() {
                   </label>
                 </div>
                 <div className="nrc-form-input nrc-u-1-1 ">
-                  <input type="text" id="firstname" className="" value="" />
+                  <input type="text" id="firstname" className=""  />
                   <small className="info-msg">
                     Họ và tên cần trung khớp với tên trong ngân hàng
                   </small>
@@ -165,7 +163,7 @@ export default function SignUp() {
                   </label>
                 </div>
                 <div className="nrc-form-input nrc-u-1-1 ">
-                  <input type="email" id="email" className="" value="" />
+                  <input type="email" id="email" className=""  />
                   <small className="info-msg">
                     Điền chính xác email để nhận khuyến mãi và khôi phục lại khi
                     quên
@@ -210,7 +208,7 @@ export default function SignUp() {
                       className="form-control"
                       placeholder="+86 12-34567"
                       data-test-id="src_reacttelephoneinput_test_id_5"
-                      value="+84"
+                      value={'+84'}
                     />
                   </div>
                   <small className="info-msg">

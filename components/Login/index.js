@@ -28,7 +28,6 @@ export default function Login() {
                       id="login"
                       className=""
                       maxLength="13"
-                      value=""
                     />
                     <small className="info-msg"></small>
                   </div>
@@ -47,7 +46,6 @@ export default function Login() {
                         id="password"
                         className=""
                         maxLength="20"
-                        value=""
                       />
                       <i className="mps-readable"></i>
                     </div>
