@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ReactPlayer from 'react-player'
 export default function MainHome() {
   return (
     <div className="container main-home">
@@ -9,9 +9,11 @@ export default function MainHome() {
             <div>
               <video
                 src="https://789b.dev/videogioithieu"
-                autoPlay= {true}
-                loop=""
-                controls=""
+                controls
+                muted
+                autoPlay={"autoplay"}
+                preLoad="auto"
+                loop
                 className="video-block"
                 width={980}
               ></video>

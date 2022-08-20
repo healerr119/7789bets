@@ -184,12 +184,13 @@ a {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .btn.is-red {
-  padding: 10px 25px;
+  padding: 8px 25px;
   background: -webkit-gradient(left top, right top, color-stop(0, #f7d322), color-stop(50%, #f49a25), color-stop(100%, #f7ba22)) 0/200%;
   background: -webkit-gradient(left top, right top, color-stop(0, #f7d322), color-stop(50%, #f49a25), color-stop(100%, #f7ba22)) var(--x, 0) / 200%;
   background: linear-gradient(90deg, #f7ba22 0, #f49a25 50%, #f7ba22) 0/200%;
   background: linear-gradient(90deg, #f7ba22 0, #f49a25 50%, #f7ba22) var(--x, 0) / 200%;
   border: 0;
+  color: white;
 }
 /* end header  */
 
@@ -952,6 +953,85 @@ ul>li>.link-secondary {
 .home-intro{
   display: none;
 }
+
+/* modal login  */
+.modal-content{
+  height: 600px;
+  background-color: #e7e7e7 !important;
+  border: unset !important;
+  border-radius: unset !important
+}
+.modal-header h5{
+  color: #fd7900;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.modal-header h5::before{
+  background-color: #fd7900;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.modal-body form{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-body .mb-3 input{
+  height: 50px;
+    width: 100%;
+}
+.modal-body .mb-3 .invalid-msg{
+  color: #d22323;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.form-control:focus{
+  border-color: #f49a25  !important;
+  box-shadow:0 0 0 0.25rem rgb(249 201 125 / 86%) !important;
+}
+.modal-body .mb-3 .nrc-button{
+  background: linear-gradient(90deg,#f7ba22,#f49a25 50%,#f7ba22) 0/200%;
+  border: 0;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 700;
+  height: auto;
+  padding: 10px 25px;
+  color: #fff;
+}
+.modal-body .mb-3.button{
+  display: block;
+  text-align: center;
+}
+.modal-body .mb-3 .signup-hint .no-account{
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+.modal-body .mb-3 .signup-hint .highlight-color{
+  color: #feb000;
+  font-size: 20px;
+}
+.flex-right-bottom.forget-options{
+  color: red;
+  display: flex;
+  justify-content: space-around;
+}
+.modal-dialog.modal-dialog-centered{
+  max-width: 650px;
+}
+.modal-content.register{
+  height: 700px;
+}
+/* enb modal login  */
 @media only screen and (max-width: 420px) {
   .float-top-ad{
     display: block;
@@ -1479,5 +1559,607 @@ button, input, optgroup, select, textarea {
   width: auto;
 }
 /* end footer  */
+/* login  */
+.app.login {
+  height: auto!important;
+}
+.app {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+.app-body {
+  color: #777;
+  min-height: 100%;
+  min-width: 320px;
+}
+.app.login .hover-container:not(.mission-calendar) {
+  background: #000;
+  display: block!important;
+  height: auto!important;
+  min-height: 100vh!important;
+  padding: 0;
+}
+.hover-container {
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 22px;
+}
+.app.login .hover-container:not(.mission-calendar) .container {
+  background: #000 url(https://csi.20icipp.com/img/static/789bet/mobile/login-bg2.jpg) top/100% auto no-repeat!important;
+  border-radius: 0;
+  line-height: 40px;
+  padding: 22px;
+  width: 100%;
+}
+.app.login .hover-container:not(.mission-calendar) .container .text-right, .app.login .hover-container:not(.mission-calendar) .container .transaction-block .list-details div p:last-child, .app.login .hover-container:not(.mission-calendar) .container .transfer-block .transfer-amount p:last-child, .app.login .hover-container:not(.mission-calendar) .container .withdrawal-processing-block .resume-details>div p:last-child, .transaction-block .list-details div .app.login .hover-container:not(.mission-calendar) .container p:last-child, .transfer-block .transfer-amount .app.login .hover-container:not(.mission-calendar) .container p:last-child, .withdrawal-processing-block .resume-details>div .app.login .hover-container:not(.mission-calendar) .container p:last-child {
+  display: none;
+}
+.text-right, .transaction-block .list-details div p:last-child, .transfer-block .transfer-amount p:last-child, .withdrawal-processing-block .resume-details>div p:last-child {
+  text-align: right;
+}
+.app.login .hover-container:not(.mission-calendar) .container .title-center {
+  background-image: url(https://csi.20icipp.com/img/static/789bet/mobile/login-title-vi.png);
+  padding-bottom: 45%;
+}
+.app.login .hover-container:not(.mission-calendar) .container .title-center {
+  background: url(https://csi.20icipp.com/img/static/789bet/mobile/login-title-en.png) top/contain no-repeat;
+  border: 0!important;
+  font-size: 0!important;
+  margin-top: 18%;
+  padding-bottom: 43%;
+  width: 100%;
+}
+.title-center {
+  color: #444;
+  font-size: 22px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group {
+  align-items: center;
+  border-bottom: 1px solid #3f3f49;
+  display: flex;
+  margin: 25px 0 0;
+}
+.input-group.signup {
+  margin: 10px 0;
+  position: relative;
+  display: unset;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-label {
+  flex: 0 0 150px;
+  width: 150px;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-label label[for=login] {
+  background: url(https://csi.20icipp.com/img/static/789bet/mobile/icon-account.jpg) 5px/23px no-repeat;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-label label[for=captcha], .app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-label label[for=login], .app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-label label[for=password] {
+  padding-left: 35px;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-label label {
+  color: #c9d4e1;
+  font-size: 15px;
+  line-height: 45px;
+}
+.nrc-form-input input {
+  box-sizing: border-box;
+  height: 45px!important;
+  width: 100%;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .nrc-form-input small {
+  color: #ccc;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.nrc-form-input small {
+  color: #666;
+  display: block;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group {
+  align-items: center;
+  border-bottom: 1px solid #3f3f49;
+  display: flex;
+  margin: 25px 0 0;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-label {
+  flex: 0 0 150px;
+  width: 150px;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-label label[for=password] {
+  background: url(https://csi.20icipp.com/img/static/789bet/mobile/icon-password.jpg) 5px/23px no-repeat;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-label label {
+  color: #c9d4e1;
+  font-size: 15px;
+  line-height: 45px;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-input {
+  width: calc(100% - 150px);
+}
+.login .nrc-form-password>div {
+  position: relative;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group input[type=email], .app.login .hover-container:not(.mission-calendar) .container form .input-group input[type=password], .app.login .hover-container:not(.mission-calendar) .container form .input-group input[type=tel], .app.login .hover-container:not(.mission-calendar) .container form .input-group input[type=text] {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 0;
+  text-indent: 10px;
+}
+.login .nrc-form-password>div i {
+  color: #777;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.app .formik-label, .app .info-msg, .app .invalid-msg {
+  font-size: 16px;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-label label[for=captcha] {
+  background: url(https://csi.20icipp.com/img/static/789bet/mobile/icon-captcha.jpg) 5px/23px no-repeat;
+}
+.nrc-form-input.secure>div {
+  height: 33px;
+  left: 80px;
+  letter-spacing: 2px;
+  line-height: 33px;
+  position: absolute;
+  text-align: center;
+  top: 8px;
+  width: 64px;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-input img[alt=captcha] {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  position: absolute;
+  right: -20px;
+}
+.nrc-form-input.secure>div img {
+  height: inherit;
+  width: inherit;
+}
+img[alt=captcha] {
+  margin-top: -3px;
+}
+.app.login .hover-container:not(.mission-calendar) .container form .input-group .nrc-form-input.secure i {
+  font-size: 18px;
+  left: 170px;
+}
+.nrc-form-input.secure i {
+  display: block;
+  font-size: 25px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  left: 160px;
+  position: absolute;
+  top: 12px;
+}
+.app.login .hover-container:not(.mission-calendar) .container .login-btn-group {
+  margin: 50px auto 15px!important;
+}
+.app.login .hover-container:not(.mission-calendar) .container .login-btn-group {
+  text-align: center;
+}
+.app.login .hover-container:not(.mission-calendar) .container .login-btn-group:before {
+  color: #c8c8c8;
+  content: "Vui lòng tự bảo quản thông tin tài khoản Để bảo đảm an toàn cho tài khoản của bạn";
+  display: block;
+  left: 0;
+  line-height: 1.5;
+  position: relative;
+  top: -30px;
+}
+.app.login .hover-container:not(.mission-calendar) .container button.nrc-button {
+  background: #ff9000;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 1px #ffec8e;
+  font-weight: 400;
+  height: 45px;
+  position: relative;
+  width: 80%;
+}
+.nrc-button {
+  background-color: #feb000;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  height: 44px;
+  width: 100%;
+}
+.app.login .hover-container:not(.mission-calendar) .container .bottom-text {
+  font-size: 0;
+  line-height: 1;
+  margin: 15px 0 10px;
+}
+.hover-container .bottom-text {
+  color: #aaa;
+  font-size: 14px;
+  text-align: center;
+}
+.app.login .hover-container:not(.mission-calendar) .container .bottom-text a {
+  background: #f8a94a;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 1px #fff390;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+}
+.hover-container .bottom-text a {
+  color: #feb000;
+  padding-left: 10px;
+  position: relative;
+}
+.app.login .hover-container:not(.mission-calendar) .container .forget-options {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+.app.login .hover-container:not(.mission-calendar) .container .forget-options a, .app.login .hover-container:not(.mission-calendar) .container .forget-options span {
+  color: #c9d4e1!important;
+  font-size: 14px;
+  font-weight: 400;
+}
+.login .forget-options a {
+  display: inline;
+}
+.app.login .hover-container:not(.mission-calendar) .container .fast-login-wrapper {
+  display: none;
+}
+.fast-login-wrapper .icons {
+  display: flex;
+  justify-content: center;
+  min-height: 32px;
+}
+.login .stagingversion {
+  color: #bbb;
+}
+/* end login  */
 
+/* register  */
+.app.signup .hover-container:not(.mission-calendar) {
+  background: #000;
+  display: block!important;
+  height: auto!important;
+  min-height: 100vh!important;
+  padding: 0;
+}
+.app.signup .hover-container {
+  align-items: center;
+  background: url(https://media.giphy.com/media/x5hegpC1Z7qrk59zn0/giphy.gif) 50%/cover no-repeat fixed;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  min-height: 100vh;
+}
+.hover-container {
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 22px;
+}
+.mobile-top-ad-wrapper {
+  width: 100%;
+}
+.mobile-top-ad-wrapper .top-ad-close-button {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 40px;
+  z-index: 2;
+  z-index: 102;
+}
+.mobile-top-ad-wrapper .top-ad-close-button .mps-close {
+  background-color: rgba(51,51,51,.9);
+  border-radius: 12px;
+  box-shadow: 0 0 2px rgb(0 0 0 / 90%);
+  color: #fff;
+  font-size: 16px;
+  padding: 4px;
+}
+.mobile-top-ad-wrapper>img {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.app.signup .policy-modal {
+  background: #fff2d5;
+  height: auto;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 40px);
+}
+.signup .policy-modal {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 70%);
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 20px);
+  left: 10px;
+  position: fixed;
+  top: 10px;
+  width: calc(100% - 20px);
+  z-index: 102;
+}
+.hover-container .header-actions {
+  height: 30px;
+  position: relative;
+}
+.app.signup .policy-modal .header-actions .text-right, .app.signup .policy-modal .header-actions .transaction-block .list-details div p:last-child, .app.signup .policy-modal .header-actions .transfer-block .transfer-amount p:last-child, .app.signup .policy-modal .header-actions .withdrawal-processing-block .resume-details>div p:last-child, .app.signup .policy-modal .title-center, .transaction-block .list-details div .app.signup .policy-modal .header-actions p:last-child, .transfer-block .transfer-amount .app.signup .policy-modal .header-actions p:last-child, .withdrawal-processing-block .resume-details>div .app.signup .policy-modal .header-actions p:last-child {
+  color: #fff;
+}
+.text-right, .transaction-block .list-details div p:last-child, .transfer-block .transfer-amount p:last-child, .withdrawal-processing-block .resume-details>div p:last-child {
+  text-align: right;
+}
+.hover-container .header-actions .btn-back i, .hover-container .header-actions .btn-close i {
+  display: inline-block;
+  font-size: 35px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  vertical-align: middle;
+}
+.app.signup .policy-modal h2.title-center {
+  color: red;
+  font-weight: 700;
+}
+.signup .policy-modal .policy-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 16px;
+  overflow: auto;
+}
+.app.signup .policy-modal .policy-container .content {
+  color: #fff;
+  margin-bottom: 10px;
+  max-height: 250px;
+}
+.signup .policy-modal.sign-popup .policy-container .content {
+  margin-bottom: 30px;
+  overflow: scroll;
+}
+.signup .policy-modal .policy-container .content {
+  color: #666;
+  flex: 1;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.signup .policy-modal .policy-container .content p {
+  margin-bottom: 8px;
+  white-space: pre-wrap;
+}
+.app.signup .policy-modal .policy-container>button {
+  display: none;
+}
+.signup .policy-modal .policy-container button.nrc-button {
+  min-height: 44px;
+}
+.app.signup .hover-container:not(.mission-calendar) .container {
+  background: url(https://csi.20icipp.com/img/static/789bet/mobile/login-bg.jpg) top/100% auto no-repeat fixed!important;
+  border-radius: 0;
+  line-height: 40px;
+  padding: 54vw 22px 22px;
+  width: 100%;
+}
+.app.signup .hover-container .container {
+  background-color: rgba(0,0,0,.5);
+  border-radius: 20px;
+  line-height: 40px;
+  padding: 0;
+  position: relative;
+  width: 90%;
+}
+.app.signup .hover-container:not(.mission-calendar) .container .container-inner {
+  background: rgba(0,0,0,.8);
+  border-radius: 20px;
+  position: relative;
+}
+.app.signup .hover-container .container .header-actions, .app.signup .hover-container .container .text-right, .app.signup .hover-container .container .transaction-block .list-details div p:last-child, .app.signup .hover-container .container .transfer-block .transfer-amount p:last-child, .app.signup .hover-container .container .withdrawal-processing-block .resume-details>div p:last-child, .transaction-block .list-details div .app.signup .hover-container .container p:last-child, .transfer-block .transfer-amount .app.signup .hover-container .container p:last-child, .withdrawal-processing-block .resume-details>div .app.signup .hover-container .container p:last-child {
+  align-items: center;
+  display: flex;
+  height: 41px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  position: absolute;
+  right: 2px;
+  top: 0;
+  width: 41px;
+  z-index: 4;
+}
+.app.signup .hover-container .container .header-actions .close, .app.signup .hover-container .container .text-right .close, .app.signup .hover-container .container .transaction-block .list-details div p:last-child .close, .app.signup .hover-container .container .transfer-block .transfer-amount p:last-child .close, .app.signup .hover-container .container .withdrawal-processing-block .resume-details>div p:last-child .close, .transaction-block .list-details div .app.signup .hover-container .container p:last-child .close, .transfer-block .transfer-amount .app.signup .hover-container .container p:last-child .close, .withdrawal-processing-block .resume-details>div .app.signup .hover-container .container p:last-child .close {
+  position: static;
+  right: auto;
+  top: auto;
+}
+.app.signup .hover-container .container .header-actions img, .app.signup .hover-container .container .text-right img, .app.signup .hover-container .container .transaction-block .list-details div p:last-child img, .app.signup .hover-container .container .transfer-block .transfer-amount p:last-child img, .app.signup .hover-container .container .withdrawal-processing-block .resume-details>div p:last-child img, .transaction-block .list-details div .app.signup .hover-container .container p:last-child img, .transfer-block .transfer-amount .app.signup .hover-container .container p:last-child img, .withdrawal-processing-block .resume-details>div .app.signup .hover-container .container p:last-child img {
+  display: block;
+  -webkit-filter: brightness(100);
+  filter: brightness(100);
+  transform: scale(.7);
+  width: 30px;
+}
+.app.signup .hover-container .container form {
+  background: transparent;
+  box-sizing: border-box;
+  padding: 0 10px;
+  transform: scale(.95);
+}
+.app.signup .hover-container:not(.mission-calendar) .container .container-inner .steps-wrapper h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.app.signup .hover-container .container .steps-wrapper h2 {
+  border-bottom: 0 solid rgba(0,0,0,.1);
+  margin: -10px 0 10px;
+}
+.app.signup .hover-container .container .steps-wrapper h2, .app.signup .hover-container .container h2.title-center {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.app.signup .hover-container:not(.mission-calendar) .container .container-inner form .input-group {
+  margin-top: 10px;
+}
+.app.signup .hover-container .container form .input-group {
+  margin: 0;
+}
+.input-group {
+  margin: 10px 0;
+  position: relative;
+}
+label {
+  color: #535353;
+  font-family: Microsoft YaHei,Microsoft JhengHei,PingFangTC,Helvetica;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25;
+}
+.app.signup .hover-container .container form .input-group label {
+  color: #feae00;
+  font-weight: 700;
+}
+.nrc-form-label label.form-require:before {
+  color: #dd9c4b;
+  content: "*";
+  margin: 0 3px;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+.app.signup .hover-container:not(.mission-calendar) .container .container-inner form .input-group input:not([type=checkbox]) {
+  background: #444;
+}
+.app.signup .hover-container .container form .input-group input[type=email], .app.signup .hover-container .container form .input-group input[type=password], .app.signup .hover-container .container form .input-group input[type=tel], .app.signup .hover-container .container form .input-group input[type=text] {
+  background-color: rgba(0,0,0,.5);
+  border: 0 solid #000;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 0 #ccc;
+  color: #fff;
+  text-indent: 10px;
+}
+.input-group input[type=date], .input-group input[type=datetime-local], .input-group input[type=datetime], .input-group input[type=email], .input-group input[type=number], .input-group input[type=password], .input-group input[type=tel], .input-group input[type=text], .input-group input[type=time] {
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px #ccc;
+  color: #535353;
+  display: block;
+  font-size: 16px;
+  height: 25px;
+  line-height: 25px;
+  padding: 10px;
+}
+.nrc-form-input input {
+  box-sizing: border-box;
+  height: 45px!important;
+  width: 100%;
+}
+.app.signup .hover-container:not(.mission-calendar) .container .container-inner form .input-group .info-msg {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.signup small.info-msg, .signup small.invalid-msg {
+  bottom: 0;
+  top: auto;
+}
+.input-group label {
+  color: #535353;
+  display: block;
+  font-size: 13px;
+  line-height: 30px;
+}
+.signup .nrc-form-password>div {
+  position: relative;
+}
+.signup .nrc-form-password>div i {
+  color: #777;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.app.signup .hover-container:not(.mission-calendar) .container .container-inner form .input-group .info-msg {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.app.signup .hover-container .container .top25 {
+  margin: 0 auto 20px;
+  position: relative;
+  width: 90%;
+}
+.app.signup .hover-container:not(.mission-calendar) .container .container-inner button.nrc-button {
+  background: #ff9000;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 1px #ffec8e;
+  font-weight: 400;
+  height: 45px;
+}
+.app.signup .hover-container .container button.nrc-button {
+  border-radius: 100px;
+  position: relative;
+}
+/* end register  */
 }
